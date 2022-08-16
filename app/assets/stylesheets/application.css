@@ -13,3 +13,38 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  margin-left: 10px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+
+  /* justify-content: flex-start; */
+}
+.flex {
+  display: flex;
+  margin: 10px;
+}
+
+.box {
+  background-color: rgb(207, 207, 207);
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 1px solid grey;
+}
+
+.box p {
+  padding: 15px;
+}
+
+.edit {
+  display: flex;
+  justify-content: flex-end;
+}

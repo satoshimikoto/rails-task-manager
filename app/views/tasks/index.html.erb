@@ -1,0 +1,16 @@
+<h1>My tasks</h1>
+
+<div class="list">
+  <% @tasks.each do |task| %>
+  <div class="flex">
+    <%= form_for(task) do |f| %>
+    <%= f.check_box :completed %>
+  <% end %>
+    <%= link_to task.title, task_path(task) %>
+  </div>
+  <% end %>
+</div>
+
+<hr>
+
+<%= link_to "Add a new task", new_path, class: "btn btn-success" %>
